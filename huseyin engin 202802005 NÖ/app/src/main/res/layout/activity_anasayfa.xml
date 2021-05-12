@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kullanici_girii"
+    tools:context=".anasayfa">
+
+
+    <ImageView
+        android:id="@+id/urunekle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="uruneklesayfasi"
+        app:layout_constraintBottom_toTopOf="@+id/fiyat_imageview"
+        app:layout_constraintEnd_toStartOf="@+id/paraekle_imageview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paraekle_imageview"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/group_6" />
+
+    <ImageView
+        android:id="@+id/paraekle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="paraeklesayfasi"
+        app:layout_constraintBottom_toTopOf="@+id/cikis_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/urunekle_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/profilimiduzenle_imageview"
+        app:srcCompat="@drawable/group_7" />
+
+    <ImageView
+        android:id="@+id/fiyat_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:onClick="fiyatlarsayfasi"
+        app:layout_constraintEnd_toStartOf="@+id/cikis_imageview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cikis_imageview"
+        app:srcCompat="@drawable/group_8" />
+
+    <ImageView
+        android:id="@+id/cikis_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:onClick="cikissayfasi"
+        app:layout_constraintBottom_toTopOf="@+id/onay_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fiyat_imageview"
+        app:srcCompat="@drawable/group_12" />
+
+    <ImageView
+        android:id="@+id/onay_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:onClick="onayislemlerisayfasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fiyat_imageview"
+        app:layout_constraintStart_toEndOf="@+id/fiyat_imageview"
+        app:srcCompat="@drawable/group_13" />
+
+    <ImageView
+        android:id="@+id/profilimiduzenle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:onClick="profilsayfasi"
+        app:layout_constraintEnd_toEndOf="@+id/urunekle_imageview"
+        app:layout_constraintStart_toEndOf="@+id/urunekle_imageview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profilimiduzenle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

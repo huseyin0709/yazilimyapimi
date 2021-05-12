@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">yazilimyapimi</string>
+
+    <string-array name="names">
+        <item>Bugday</item>
+        <item>Arpa</item>
+        <item>Yulaf</item>
+        <item>Pamuk</item>
+        <item>Misir</item>
+    </string-array>
+</resources>

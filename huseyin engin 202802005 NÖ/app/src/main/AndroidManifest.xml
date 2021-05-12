@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huso.yazilimyapimi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yazilimyapimi">
+        <activity android:name=".profilimiduzenle"></activity>
+        <activity android:name=".onayislemleri" />
+        <activity android:name=".fiyatolusumu" />
+        <activity android:name=".paraekle" />
+        <activity android:name=".urunekle" />
+        <activity android:name=".anasayfa" />
+        <activity android:name=".hesapolustur" />
+        <activity android:name=".kullanicisayfasi" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
